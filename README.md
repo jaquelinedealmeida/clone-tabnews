@@ -30,3 +30,11 @@ No package.json, adcionar script se o codigo esta com a formatação esperada
 
 Corrige os arquivos
 `"lint:fix": " prettier --write ."`
+
+## Comandos
+
+Rodar aplicação
+
+´´
+npm run dev
+´´
