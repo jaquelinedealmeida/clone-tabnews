@@ -38,3 +38,21 @@ Rodar aplicação
 ´´
 npm run dev
 ´´
+
+Instalar o gerenciador de versões do node
+
+´´
+nvm install
+´´
+
+Usar a versão do node indicda no .nvmrc
+
+´´
+nvm use
+´´
+
+Instalar jest para testes
+
+```
+npm install -save-dev jest@29.6.2
+```
