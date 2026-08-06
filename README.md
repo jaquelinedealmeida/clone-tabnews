@@ -22,37 +22,101 @@ o arquivo .editorConfig pode ser usado para adcionar configurações específica
 ### Pretier
 
 Permite fazer formatações antes da instalação do .editorconfig.
-instala somente com dependência de Dev;
-`npm install prettier --D`
+instala somente com dependência de Dev:
+
+```
+npm install prettier --D
+```
 
 No package.json, adcionar script se o codigo esta com a formatação esperada
-` "lint:check": "prettier --check ."`
+
+```
+lint:check": "prettier --check
+```
 
 Corrige os arquivos
-`"lint:fix": " prettier --write ."`
+
+```
+lint:fix": " prettier --write
+```
 
 ## Comandos
 
 Rodar aplicação
 
-´´
+```
 npm run dev
-´´
+```
 
 Instalar o gerenciador de versões do node
 
-´´
+```
 nvm install
-´´
+```
 
 Usar a versão do node indicda no .nvmrc
 
-´´
+```
 nvm use
-´´
+```
 
 Instalar jest para testes
 
 ```
 npm install -save-dev jest@29.6.2
+```
+
+### Subir ambiente:
+
+Banco de Dados Local:
+Subir container
+
+```
+docker compose up -d
+```
+
+ou
+
+```
+docker compose --file compose.yaml up -d
+```
+
+Encerrar container
+
+```
+docker compose --file compose.yaml down
+```
+
+Listar todos os containers:
+
+```
+docker compose -a
+```
+
+Com a extensão `Docker container`é possível acompanhar todos os containers e imagens.
+
+Verificar logs do container:
+
+```
+docker logs nome-do-container
+```
+
+### Instalando psql
+
+Para atualização de pacote do linux:
+
+```
+sudo apt updte
+```
+
+Instalando psql client
+
+```
+sudo apt install postgresql-client
+```
+
+Acessar banco de dados via container
+
+```
+psql --host=localhost --username=user --port=5432
 ```
