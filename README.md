@@ -78,7 +78,7 @@ docker compose up -d
 ou
 
 ```
-docker compose --file compose.yaml up -d
+docker compose --file infra/compose.yaml up -d
 ```
 
 Encerrar container
@@ -109,7 +109,7 @@ Para atualização de pacote do linux:
 sudo apt updte
 ```
 
-Instalando psql client
+Instalando psql client para conectar e acessar o banco de dados em linha de comando
 
 ```
 sudo apt install postgresql-client
@@ -119,4 +119,10 @@ Acessar banco de dados via container
 
 ```
 psql --host=localhost --username=user --port=5432
+```
+
+Instalando pg client para Node.js
+
+```
+npm install pg@8.11.3
 ```
