@@ -126,3 +126,20 @@ Instalando pg client para Node.js
 ```
 npm install pg@8.11.3
 ```
+
+Corrigindo erro no teste, causando por configuração do jest.
+
+```
+Criar arquivo jest.config.js com as configurações especificadas
+```
+
+```
+criar arquivo jest.setup.js vazio
+```
+
+Rodar os comandos abaixo:
+
+```
+npm install --save-dev jest-environment-node
+npm run test:watch
+```
